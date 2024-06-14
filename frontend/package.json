@@ -20,7 +20,6 @@
     "react-slick": "^0.29.0",
     "react-toastify": "^10.0.4",
     "redux": "^5.0.1",
-    "redux-react-hook": "^4.0.3",
     "sass": "^1.70.0",
     "slick-carousel": "^1.8.1",
     "use-location": "^0.0.1",
