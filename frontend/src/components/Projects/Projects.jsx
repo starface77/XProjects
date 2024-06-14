@@ -5,13 +5,16 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Подклю�
 import "./style.scss"; // Подключаем пользовательские стили для компонента Projects
 import tg from "../../assets/tgspam.jpg"; // Подключаем изображение для использования в карусели
 import Footer from '../Navigation/Footer';
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+    const { t } = useTranslation();
+
     return (
         <div className="projects-container">
             <div className="projects-controller">
-                <p className="aboutme">PROJECTS</p>
-                <span>EXPLORE NOW</span>
+                <p className="aboutme">{t('PROJECTS')}</p>
+                <span>{t('EXPLORE NOW')}</span>
 
                 <Carousel
                     showThumbs={false}
@@ -22,16 +25,16 @@ function Projects() {
                     stopOnHover={false} // Отключаем остановку при наведении
                     swipeable={true} // Включаем возможность прокрутки карусели свайпом на мобильных устройствах
                     emulateTouch={true} // Включаем эмуляцию касания на устройствах с мышью
+                    showIndicators={false} // Убираем точки (dots) внизу
                 >
                     <div className="projects-div">
                         <div className="left">
                             <img src={tg} alt="Project" />
                         </div>
                         <div className="right">
-                            <p>#React</p>
-                            <span>Designed a modern UI website comprising more than 50 screens, along with the integration of a blog using React.js.</span>
-                            <a href="github.com/starface77">Click For Go To Github</a>
-
+                            <p>{t('#React')}</p>
+                            <span>{t('Designed a modern UI website comprising more than 50 screens, along with the integration of a blog using React.js.')}</span>
+                            <a href="github.com/starface77">{t('Click For Go To Github')}</a>
                         </div>
                     </div>
 
@@ -40,10 +43,9 @@ function Projects() {
                             <img src={"https://content.freelancehunt.com/cdn-cgi/image/format=auto,fit=scale-down,width=780,dpr=1,gravity=top/snippet/9f0be/1a381/1841675/raness.png"} alt="Project" />
                         </div>
                         <div className="right">
-                            <p>#Css + Html</p>
-                            <span>Designed a modern UI website Landing</span>
-                            <a href="github.com/starface77">Click For Go To Github</a>
-
+                            <p>{t('#Css + Html')}</p>
+                            <span>{t('Designed a modern UI website Landing')}</span>
+                            <a href="github.com/starface77">{t('Click For Go To Github')}</a>
                         </div>
                     </div>
                     <div className="projects-div">
@@ -51,10 +53,9 @@ function Projects() {
                             <img src={"https://cdn-edge.kwork.ru/files/portfolio/t0_r/26/f3ecf1e935e6100fae312061443d1b6a9cf9e133-1717213654.webp"} alt="Project" />
                         </div>
                         <div className="right">
-                            <p>#Css + Html</p>
-                            <span>NFT Web-site Designed a modern UI website Landing</span>
-                            <a href="https://github.com/starface77">Click For Go To Github</a>
-
+                            <p>{t('#Css + Html')}</p>
+                            <span>{t('NFT Web-site Designed a modern UI website Landing')}</span>
+                            <a href="https://github.com/starface77">{t('Click For Go To Github')}</a>
                         </div>
                     </div>
                     <div className="projects-div">
@@ -62,9 +63,9 @@ function Projects() {
                             <img src={"https://cdn-edge.kwork.ru/files/portfolio/t0/29/5d1def9e4baf98f6829833fb1b2bdcc6b8fc1bf1-1717213553.webp"} alt="Project" />
                         </div>
                         <div className="right">
-                            <p>#React + Bootstrap</p>
-                            <span>Web-site Using Bootstrap + React.JS</span>
-                            <a href="https://github.com/starface77">Click For Go To Github</a>
+                            <p>{t('#React + Bootstrap')}</p>
+                            <span>{t('Web-site Using Bootstrap + React.JS')}</span>
+                            <a href="https://github.com/starface77">{t('Click For Go To Github')}</a>
                         </div>
                     </div>
                 </Carousel>

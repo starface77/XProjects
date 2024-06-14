@@ -1,26 +1,39 @@
+import React from "react";
+import Projects from "../Projects/Projects";
+import "./style.scss";
+import i18n from 'i18next';
+import { initReactI18next, useTranslation } from 'react-i18next';
 import Explore from "../Explore/Explore";
-import "./style.scss"
+
+
 
 function Home() {
-    return (
-        <div className="main-container">
-            <div className="bg-img">
-                <div className="controller">
-                    <div className="center">
-                        <p className="nickname">STARFACE!</p>
-                        <span>I do Code & Chill 🍿</span>
-                        <p>
-                            Passionate software engineer with a focus on front-end development, dedicated to crafting elegant and user-friendly mobile applications.</p>
-                        <br />
-                        <div className="button-contact">
-                            <a href="https://t.me/Starfaceev" className="contactme">Contact Me</a>
-                        </div>
-                    </div>
-                </div>
+  const { t } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'ru' : 'en';
+    i18n.changeLanguage(newLang);
+    console.log("1")
+  };
+
+  return (
+    <div className="main-container">
+      <div className="bg-img">
+        <div className="controller">
+          <div className="center">
+            <p className="nickname">{t('STARFACE')}</p>
+            <span>{t('123')}</span>
+            <p>{t('passionate')}</p>
+            <br />
+            <div className="button-contact">
+              <a href="https://t.me/Starfaceev" className="contactme">{t('Contact')}</a>
             </div>
-            <Explore />
+          </div>
         </div>
-    );
+      </div>
+      <Explore />
+    </div>
+  );
 }
 
 export default Home;

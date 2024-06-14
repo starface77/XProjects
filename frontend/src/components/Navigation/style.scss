@@ -1,14 +1,17 @@
 .nav-container {
-    
+
     .nav-controller {
         display: flex;
         padding-left: 55px;
     }
+
     .logo {
         display: flex;
+
         img {
             width: 20px;
         }
+
         p {
             font-family: sans-serif;
             color: snow;
@@ -18,8 +21,10 @@
 
         }
     }
+
     .left-content {
         margin-left: 50px;
+
         span {
             font-family: cursive;
             letter-spacing: 10px;
@@ -27,8 +32,16 @@
             margin-left: 70px;
         }
     }
+
     .right-content {
-        margin-left: 900px;
+        margin-left: 800px;
+        select {
+            padding: 5px;
+            background-color: #9C83FF;
+            border-radius: 10PX;
+            margin-left: 30px;
+        }
+    
         a {
             margin-left: 20px;
             padding: 10px;
@@ -40,16 +53,19 @@
             color: snow;
             font-family: sans-serif;
 
-        
+
         }
+
         a:hover {
             background-color: snow;
             color: black;
         }
+
         .contact:hover {
             background-color: #1E1E1E;
             color: snow;
         }
+
         .contact {
             background-color: snow;
             color: black;
