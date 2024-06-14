@@ -1,0 +1,73 @@
+.explore-container {
+    text-align: center;
+
+    .explore-controller {
+        display: block;
+
+        .div-1 {
+            color: snow;
+            font-family: sans-serif;
+            margin-top: 100px;
+
+            .aboutme {
+                font-size: 3.5em;
+                font-weight: 750;
+            }
+        }
+
+        .about-p{
+            margin-top: 50px;
+        }
+
+        span {
+            font-size: 0.9em;
+            letter-spacing: 5px;
+            background: linear-gradient(to right, #9C83FF 50%, #FF9051 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-text {
+            margin-bottom: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .left {
+                font-size: 2em;
+                display: flex;
+                float: left;
+
+                p {
+                    margin-right: 10px;
+                }
+            }
+
+            .right {
+                float: left;
+                margin-left: 500px;
+
+                p {
+                    font-size: 1.2em;
+                    font-family: cursive;
+                }
+            }
+
+
+        }
+
+        .tech-stack {
+            width: 100px;
+            border-radius: 10px;
+            display: flex;
+            margin-top: 50px;
+            .div-border {
+                margin-right: 30px;
+                border: #FF9051 1px solid;
+                border-radius: 50px;
+                padding: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+}

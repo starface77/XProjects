@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Landing Web-Site",
+        "img": "./tgspam.jpg",
+        "about": "At our landing page, we're dedicated to showcasing the essence of innovation and excellence. Here, you'll find a curated selection of top-tier products and services designed to elevate your experience in [relevant industry/field].",
+        "stack": "Tech stack: HTML, JavaScript, SASS, React"
+    },
+    {
+        "title": "Project Title 2",
+        "about": "This is another sample project description. More random things are here in the description. This is a sample project lorem ipsum generator for dummy content.",
+        "stack": "Tech stack: HTML, CSS, JavaScript, React, Node.js"
+    },
+    {
+        "title": "Project Title 3",
+        "about": "This is another sample project description. More random things are here in the description. This is a sample project lorem ipsum generator for dummy content.",
+        "stack": "Tech stack: HTML, CSS, JavaScript, React, Node.js"
+    }
+]
